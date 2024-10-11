@@ -655,6 +655,9 @@ nav div:not(:first-child):before {
     background-color: rgba(108, 92, 231, 1);
     color: #fff;
 }
+.container3 {
+    margin: 0 135px 0 135px;
+}
 
 .container3 h1 {
     font-family: Inter;
@@ -700,6 +703,7 @@ nav div:not(:first-child):before {
     display: flex;
     column-gap: 30px;
     margin-bottom: 32px;
+    margin: 96px 135px 32px 135px;
 }
 
 .container4__social-inf > p {
@@ -1045,7 +1049,30 @@ nav div:not(:first-child):before {
         top: 325px;
         font-size: 0;
     }
+    
+    .container2 {
+        position: absolute;
+        top: 2500px;
+        margin: 0 15px 0 15px;
+    }
 
+    .container2 h1 {
+        font-family: Inter;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        text-align: left;
+    }
+    
+    .container2 h2 {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: -0.25px;
+        text-align: left;
+    }
     .container__div4 {
         width: 130px;
         height: 146px;
@@ -1079,26 +1106,175 @@ nav div:not(:first-child):before {
     .container__text2 {
         display: none;
     }
-
+    
     .container3 {
+        margin: 0 15px 0 15px;
         position: absolute;
         top: 991px;
         width: 360px;
-        margin: 0;
     }
 
-    .container2 {
-        margin: 0;
+    .container3 h1 {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0.25px;
+        text-align: left;
+        margin-top: 72px;
     }
 
+    .container3 h1 span {
+        color: rgba(108, 92, 231, 1);
+        display: inline-block;
+    }
+
+    .container3__flex {
+        flex-wrap: wrap;
+    }
+
+    .container3__support {
+        width: 150px;
+        margin-bottom: 180px;
+        padding: 0;
+        /* height: 273px; */
+    }
+
+    .container3__support h2 {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0.25px;
+        text-align: left;
+    }
+    
     .container2__flex {
         position: absolute;
-        top: 2000px
+        /* top: 2000px */
+        flex-direction: column;
+    }
+
+    .active:before {
+        content: '';
+        width: 0;
+        height: 0;
+        opacity: 0.0;
+    }
+    
+    .container4 {
+        position: absolute;
+        top: 3000px
+    }
+
+    .img_end {
+        display: none;
+    }
+
+    .container2__like {
+        width: 330px;
+        /* height: 392px; */
+        padding: 0;
+    }
+
+    .container2__Individual {
+        width: 300px;
+        height: 392px;
+        padding: 0;
+        margin-bottom: 180px;
+    }
+
+    .container2__Corporate {
+        width: 330px;
+        height: 392px;
+        padding: 0;
+        margin-bottom: 80px;
+    }
+
+    .container2__btn {
+        margin: 10px;
+    }
+
+    .container4 {
+        display: none;
+    }
+
+    .footer {
+        /* display: flex; */
+        position: absolute;
+        top: 3349px;
+        text-align: center;
+        margin: 0 15px;
+    }
+    
+    .copyright {
+        color: rgba(45, 52, 54, 1);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+    }
+    
+    .setproduct {
+        color: rgba(0, 184, 148, 1);
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.30000001192092896px;
+        text-align: center;
+    }
+
+    .footer h1 {
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        color: rgba(108, 92, 231, 1);
+        margin: 0;
+    }
+
+    .container4__social:hover {
+        background: #fff;
+    }
+
+    .container4__social:active {
+        background: #fff;
+        opacity: 0.5;
+    }
+    
+    .container4__social {
+        background: #fff;
+
+    }
+
+    .img_end2 {
+        width: 555.87px;
+        height: 154.04px;
+        position: absolute;
+        top: 89px;
+        left: -359px;
     }
 }
 
 @media (min-width: 361px) {
     .container__img1 {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    #head__btn-nav {
+        display: none;
+    }
+
+    .img_end2 {
         display: none;
     }
 }
