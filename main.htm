@@ -10,18 +10,19 @@
     <header class="head">
         <div class="head__logo">
             <img class="head__img" src="./image/icon-layout.png" alt="">
+            <img src="./image/icon-menu.jpg" id="head__btn-nav"></img>
             <div class="head__span">Grid</div>
         </div>
-            <nav>
+            <nav id="head__nav" class="head__nav">
                 <div><a class="head__link" href="#">How it works</a></div>
                 <div><a class="head__link" href="#">Who we are</a></div>
                 <div><a class="head__link" href="#">What we do</a></div>
                 <div><a class="head__link" href="#">Contact us</a></div>
             </nav>
         <div class="head__sing-in">
-            <div class="head__circle go-left"></div>
-            <div class="head__circle go-right"></div>
-            <div class="head__rect"><span>Sing in</span></div>
+            <!-- <div class="head__circle go-left"></div>
+            <div class="head__circle go-right"></div> -->
+            <div id="head__rect" class="head__rect"><span>Sing in</span></div>
         </div>
     </header>
     
@@ -38,8 +39,8 @@
         </div>
         <div class="container__flex">
             <div class="container__div1">
-                We aimed to deliver HQ templates for Figma<br>
-                <span>Used by 123 people</span>
+                <span>We aimed to deliver HQ templates for Figma<br>
+                Used by 123 people</span>
             </div>
             <div>
                 <div class="container__flex2">
@@ -61,6 +62,7 @@
             <h2 class="container__h2">To represent a product</h2>
         </div>
         <img class="container__img" src="./image/Rectangle.png" alt="">
+        <img class="container__img1" src="./image/Rectangle2.png" alt="">
         <img class="container__img2" src="./image/🎨 Dots 1.png" alt="">
     </div>
 
@@ -219,5 +221,16 @@
         </div>
     </div>
     <img src="./image/Wave.png" alt="">
+
+    <script>
+        const btnNav = document.getElementById('head__btn-nav')
+        const headNav = document.getElementById('head__nav')
+        const headRect = document.getElementById('head__rect')
+        btnNav.addEventListener('click', () =>{
+            headNav.style.visibility = headNav.style.visibility =='hidden' ? 'visible' : 'hidden'
+            headRect.style.visibility = headRect.style.visibility =='visible' ? 'hidden' : 'visible'
+
+        })
+    </script>
 </body>
 </html>
